@@ -1,0 +1,135 @@
+{
+  "info": {
+    "_postman_id": "76eeabc7-63df-4310-9a53-b2d248d4ae8a",
+    "name": "github",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52589963",
+    "_collection_link": "https://go.postman.co/collection/52589963-76eeabc7-63df-4310-9a53-b2d248d4ae8a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "https://api.github.com/user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "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",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.github.com/user",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://api.github.com/user/repos",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "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",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"API-Testing-Automation-Project 1\",\r\n  \"description\": \"This is my first QA automation project created via Postman API \",\r\n  \"private\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.github.com/user/repos",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "user",
+            "repos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://api.github.com/repos/Mohamed-Bakr2004/API-Testing-Automation-Project",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "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",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.github.com/repos/Mohamed-Bakr2004/API-Testing-Automation-Project-1",
+          "protocol": "https",
+          "host": [
+            "api",
+            "github",
+            "com"
+          ],
+          "path": [
+            "repos",
+            "Mohamed-Bakr2004",
+            "API-Testing-Automation-Project-1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
